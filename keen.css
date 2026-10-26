@@ -8,8 +8,6 @@
  */
 
 @layer keen.bootstrap;
-@layer keen.container.core;
-@layer keen.container.lib;
 @layer keen.type.core;
 @layer keen.type.lib;
 @layer keen.grid.core;
@@ -19,15 +17,6 @@
 @layer keen.postprocess;
 
 @layer keen {
-    @layer container.core {
-        [keen-container] {
-            --keen-container--container-name: initial;
-            container-type: inline-size;
-            container-name: keen var(--keen-container--container-name, );
-            display: block;
-        }
-    }
-
     @layer type.core {
 
         /**
