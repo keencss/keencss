@@ -7,12 +7,8 @@
  * @license MIT License
  */
 
-@layer keen.type.core;
-@layer keen.grid.core;
-@layer keen.skin.core;
-
-@layer keen {
-    @layer type.core {
+@layer keen.type {
+    @layer {
 
         /**
          *
@@ -228,8 +224,10 @@
             margin: 0;
         }
     }
+}
 
-    @layer grid.core {
+@layer keen.grid {
+    @layer {
         [keen-grid] {
             --keen-grid--border-block-start-style: none;
             --keen-grid--border-block-end-style: none;
@@ -346,8 +344,10 @@
             }
         }
     }
+}
 
-    @layer skin.core {
+@layer keen.skin {
+    @layer {
         [keen-skin] {
             --keen-skin--color-scheme: only light;
             --keen-skin--text-color: CanvasText;
